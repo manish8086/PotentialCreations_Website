@@ -27,6 +27,7 @@ export function Navbar() {
 
         <NavigationMenu>
           <NavigationMenuList>
+            {/* 1. Products */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>Products</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -47,6 +48,7 @@ export function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
+            {/* 2. Design Gallery */}
             <NavigationMenuItem>
               <Link href="/gallery">
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
@@ -55,14 +57,16 @@ export function Navbar() {
               </Link>
             </NavigationMenuItem>
 
+            {/* 3. About */}
             <NavigationMenuItem>
-              <Link href="/custom-order">
+              <Link href="/about">
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                  Custom Order
+                  About
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
 
+            {/* 4. Contact Us */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -102,14 +106,6 @@ export function Navbar() {
                   </li>
                 </ul>
               </NavigationMenuContent>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link href="/about">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                  About
-                </NavigationMenuLink>
-              </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
