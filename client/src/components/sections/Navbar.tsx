@@ -18,14 +18,14 @@ const productCategories = [
 export function Navbar() {
   return (
     <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
-        <Link href="/" className="mr-8">
+      <div className="container flex h-16 items-center justify-between">
+        <Link href="/" className="flex-none">
           <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
             Potential Creations
           </h1>
         </Link>
 
-        <NavigationMenu>
+        <NavigationMenu className="flex-none">
           <NavigationMenuList>
             {/* 1. Products */}
             <NavigationMenuItem>
