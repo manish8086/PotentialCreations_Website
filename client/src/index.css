@@ -10,10 +10,6 @@
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
-  }
-
-  h1, h2, h3, .font-rochester {
-    font-family: 'Rochester', cursive;
+    @apply font-rochester antialiased bg-background text-foreground;
   }
 }
